@@ -14,6 +14,8 @@
 		567379B427D00BC300ADE7D6 /* MusicByLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567379B327D00BC300ADE7D6 /* MusicByLocationTests.swift */; };
 		567379BE27D00BC300ADE7D6 /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567379BD27D00BC300ADE7D6 /* MusicByLocationUITests.swift */; };
 		567379C027D00BC300ADE7D6 /* MusicByLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567379BF27D00BC300ADE7D6 /* MusicByLocationUITestsLaunchTests.swift */; };
+		567379CD27D00CC100ADE7D6 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567379CC27D00CC100ADE7D6 /* LocationHandler.swift */; };
+		567379D027D016C000ADE7D6 /* CLPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567379CF27D016C000ADE7D6 /* CLPlacemark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		567379B927D00BC300ADE7D6 /* MusicByLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567379BD27D00BC300ADE7D6 /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		567379BF27D00BC300ADE7D6 /* MusicByLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		567379CC27D00CC100ADE7D6 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		567379CF27D016C000ADE7D6 /* CLPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		567379A127D00BC200ADE7D6 /* MusicByLocation */ = {
 			isa = PBXGroup;
 			children = (
+				567379CE27D016AC00ADE7D6 /* Extensions */,
 				567379A227D00BC200ADE7D6 /* MusicByLocationApp.swift */,
 				567379A427D00BC200ADE7D6 /* ContentView.swift */,
 				567379A627D00BC300ADE7D6 /* Assets.xcassets */,
 				567379A827D00BC300ADE7D6 /* Preview Content */,
+				567379CC27D00CC100ADE7D6 /* LocationHandler.swift */,
 			);
 			path = MusicByLocation;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				567379BF27D00BC300ADE7D6 /* MusicByLocationUITestsLaunchTests.swift */,
 			);
 			path = MusicByLocationUITests;
+			sourceTree = "<group>";
+		};
+		567379CE27D016AC00ADE7D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				567379CF27D016C000ADE7D6 /* CLPlacemark.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567379CD27D00CC100ADE7D6 /* LocationHandler.swift in Sources */,
 				567379A527D00BC200ADE7D6 /* ContentView.swift in Sources */,
 				567379A327D00BC200ADE7D6 /* MusicByLocationApp.swift in Sources */,
+				567379D027D016C000ADE7D6 /* CLPlacemark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +438,7 @@
 				DEVELOPMENT_TEAM = U45WKJ9V3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find your facourite tunes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +468,7 @@
 				DEVELOPMENT_TEAM = U45WKJ9V3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find your facourite tunes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
